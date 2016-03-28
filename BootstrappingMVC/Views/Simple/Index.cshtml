@@ -25,12 +25,7 @@
     </p>
 </div>
 
-<div>
-    <p>
-        Skills:
-        @foreach (var skill in Model.Skills)
-        {
-            <span class="label label-primary">@skill</span>
-        }
-    </p>
-</div>
+@{
+    ViewBag.ListDescription = "Skills";
+    Html.RenderPartial("_StringCollection", Model.Skills);
+}
