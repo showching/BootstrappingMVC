@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BootstrappingMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,16 @@ namespace BootstrappingMVC.Controllers
         // GET: Simple
         public ActionResult Index()
         {
-            return View();
+            var person = new Person
+            {
+                FirstName = "Billy Jo",
+                LastName = "McGuffery",
+                BirthDate = new DateTime(1990, 6, 1),
+                LikesMusic = true,
+                Skills = new List<string>() { "Math", "Science", "History" }
+            };
+
+            return View(person);
         }
     }
 }
