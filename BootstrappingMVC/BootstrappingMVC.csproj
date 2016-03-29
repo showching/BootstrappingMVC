@@ -231,6 +231,8 @@
     <Content Include="Views\Simple\Index.cshtml" />
     <Content Include="Views\Simple\_StringCollection.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Boolean.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\Boolean.cshtml" />
+    <Content Include="Views\Simple\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
