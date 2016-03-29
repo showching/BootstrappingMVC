@@ -10,9 +10,10 @@
         <p>@Model.FirstName was born on @Model.BirthDate.ToString("D").</p>
         <p>Likes Music: @Html.DisplayFor(model => model.LikesMusic)</p>
         @{
-            ViewBag.ListDescription = "Skills:";
-            Html.RenderPartial("_StringCollection", Model.Skills);
+            ViewBag.ListDescription = "Skills";
         }
+        @Html.Partial("_StringCollection", Model.Skills)
+
     </div>
 </div>
 
