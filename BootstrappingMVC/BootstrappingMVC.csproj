@@ -233,6 +233,7 @@
     <Content Include="Views\Shared\DisplayTemplates\BooleanButtonLabel.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\BooleanButtonLabel.cshtml" />
     <Content Include="Views\Simple\Create.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Person.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
