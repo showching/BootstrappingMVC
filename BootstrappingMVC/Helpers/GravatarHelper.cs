@@ -20,11 +20,11 @@ namespace BootstrappingMVC.Helpers
             emailAddress = string.IsNullOrEmpty(emailAddress) ? string.Empty : emailAddress.Trim().ToLower();
 
             imgTag.Attributes.Add("src",
-                string.Format("http://www.gravatar.com/avatar/{0}?s={1}{2}{3}",
+                string.Format("http://www.gravatar.com/avatar/{0}?s={1}&d={2}&r={3}",
                     GetMd5Hash(emailAddress),
                     options.Size,
-                    "&d=" + options.DefaultImageType,
-                    "&r=" + options.RatingLevel
+                    options.DefaultImageType,
+                    options.RatingLevel
                     )
                 );
 
