@@ -14,5 +14,6 @@ namespace BootstrappingMVC.Models
         [UIHint("BooleanButtonLabel")]
         public bool LikesMusic { get; set; }
         public ICollection<string> Skills { get; set; }
+        public string EmailAddress { get; set; }
     }
 }
