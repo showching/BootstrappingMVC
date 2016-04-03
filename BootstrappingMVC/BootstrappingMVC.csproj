@@ -39,6 +39,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GenFu, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GenFu.1.0.4\lib\net45\GenFu.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -161,6 +165,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\SimpleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -231,11 +236,12 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Simple\Index.cshtml" />
-    <Content Include="Views\Simple\_StringCollection.cshtml" />
+    <Content Include="Views\Shared\_StringCollection.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\BooleanButtonLabel.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\BooleanButtonLabel.cshtml" />
     <Content Include="Views\Simple\Create.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Person.cshtml" />
+    <Content Include="Views\Person\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
