@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace BootstrappingMVC.Controllers
 {
-    public class PersonController : Controller
+    public class PersonController : BaseController
     {
         private static List<Person> _people;
 
@@ -50,9 +50,10 @@ namespace BootstrappingMVC.Controllers
             if (ModelState.IsValid)
             {
                 _people.Add(person);
+                Success(string.Format("<b>{0}</b> was successfully added to the database.", person.FirstName), true);
                 return RedirectToAction("Index");
             }
-
+            Danger("Looks like something went wrong. Please check your form.");
             return View(person);
         }
     }
