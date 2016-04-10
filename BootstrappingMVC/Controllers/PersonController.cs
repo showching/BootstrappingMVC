@@ -36,5 +36,24 @@ namespace BootstrappingMVC.Controllers
 
             return PartialView("_SearchPeople", result);
         }
+
+        // GET
+        public ActionResult Create()
+        {
+            var person = new Person();
+            return View(person);
+        }
+
+        [HttpPost]
+        public ActionResult Create(Person person)
+        {
+            if (ModelState.IsValid)
+            {
+                _people.Add(person);
+                return RedirectToAction("Index");
+            }
+
+            return View(person);
+        }
     }
 }
