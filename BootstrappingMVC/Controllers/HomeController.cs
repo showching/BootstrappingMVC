@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BootstrappingMVC.Models;
 
 namespace BootstrappingMVC.Controllers
 {
@@ -10,6 +11,21 @@ namespace BootstrappingMVC.Controllers
     {
         public ActionResult Index()
         {
+            var notifications = new List<NotificationViewModel>();
+            notifications.Add(new NotificationViewModel
+            {
+                Count = 2,
+                NotificationType = "Registration",
+                BadgeClass = "info"
+            });
+            notifications.Add(new NotificationViewModel
+            {
+                Count = 1,
+                NotificationType = "Email",
+                BadgeClass = "success"
+            });
+            ViewBag.Notifications = notifications;
+
             return View();
         }
 
