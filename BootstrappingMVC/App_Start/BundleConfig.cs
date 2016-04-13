@@ -25,6 +25,7 @@ namespace BootstrappingMVC
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/bootstrap.custom.css",
                       "~/Content/site.css"));
         }
     }
