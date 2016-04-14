@@ -1,6 +1,4 @@
-﻿@using BootstrappingMVC.Models
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -22,16 +20,7 @@
                 @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    @foreach (NotificationViewModel notification in ViewBag.Notifications)
-                    {
-                        <li><a href="#">@notification.NotificationType <span class="badge badge-@notification.BadgeClass">@notification.Count</span></a></li>
-                    }
-                </ul>
-
+                @Html.Partial("_MenuPartial")
                 @Html.Partial("_LoginPartial")
             </div>
         </div>

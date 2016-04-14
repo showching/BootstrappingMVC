@@ -8,7 +8,6 @@ using BootstrappingMVC.Filters;
 
 namespace BootstrappingMVC.Controllers
 {
-    [NotificationFilter]
     public class HomeController : Controller
     {
         public ActionResult Index()
