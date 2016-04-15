@@ -167,6 +167,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
+    <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\SimpleController.cs" />
     <Compile Include="Filters\NotificationFilter.cs" />
     <Compile Include="Global.asax.cs">
@@ -174,6 +175,7 @@
     </Compile>
     <Compile Include="Helpers\Alert.cs" />
     <Compile Include="Helpers\AlertStyles.cs" />
+    <Compile Include="Helpers\Bootstrap.cs" />
     <Compile Include="Helpers\GravatarHelper.cs" />
     <Compile Include="Helpers\GravatarOptions.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -187,6 +189,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Themes\Darkly\bootstrap.css" />
+    <Content Include="Content\Themes\Readable\bootstrap.css" />
+    <Content Include="Content\Themes\Superhero\bootstrap.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -256,6 +261,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Profile\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
