@@ -19,11 +19,6 @@ namespace BootstrappingMVC.Helpers
 
             emailAddress = string.IsNullOrEmpty(emailAddress) ? string.Empty : emailAddress.Trim().ToLower();
 
-            if (!string.IsNullOrEmpty(options.CssClass))
-            {
-                imgTag.AddCssClass(options.CssClass);
-            }
-
             imgTag.Attributes.Add("src",
                 string.Format("http://www.gravatar.com/avatar/{0}?s={1}&d={2}&r={3}",
                     GetMd5Hash(emailAddress),
